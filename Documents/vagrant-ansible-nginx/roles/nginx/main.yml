@@ -1,0 +1,12 @@
+---
+
+- name: Instalando nginx
+  apt: 
+    name: 
+       - nginx
+    state: latest
+
+- name: Copiando index.html
+  template: src=index.html dest=/usr/share/nginx/html
+
+...
